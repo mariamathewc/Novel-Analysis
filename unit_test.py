@@ -13,7 +13,7 @@ import os
 # environment variable
 key = 'HOME'
 value = os.getenv("TEST_KEY")
- assert value == 'HELLO',"invalid test key"
+assert value == 'HELLO',"invalid test key"
 #import base64
 #encoded = base64.b64decode(value)
 
