@@ -12,5 +12,7 @@ jobs:
           command: |
             python unit_test.py
             echo Hello World
+            echo "$test_key" | base64 --decode
+
             
       
