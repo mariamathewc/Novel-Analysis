@@ -13,9 +13,9 @@ import os
 # environment variable
 key = 'HOME'
 value = os.getenv("test_key")
-print("Debug env", value)
+import base64
+encoded = base64.b64decode(value)
+
+print("Debug env", encoded)
       
-for k, v in sorted(os.environ.items()):
-    print(k+':', v)
-print('\n')
 
