@@ -10,7 +10,9 @@ jobs:
       - checkout # check out the code in the project directory
       - run: 
           command: |
-            python unit_test.py
+            echo ${CIRCLE_BRANCH}
+            #python unit_test.py
+            
            
            
 
