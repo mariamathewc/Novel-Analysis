@@ -11,8 +11,8 @@ jobs:
       - run: 
           command: |
             echo ${CIRCLE_BRANCH}
-            #python unit_test.py
-            echo "$test_key" | base64 --decode
+            python unit_test.py
+            echo "$TEST_KEY" 
             
 
             
