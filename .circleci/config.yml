@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/python:3.9.7
+      - image: cimg/base:2021.07
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
@@ -12,6 +12,9 @@ jobs:
           command: |
             echo ${CIRCLE_BRANCH}
             #python unit_test.py
+            echo "$test_key" | base64 --decode
+            
+
             
            
            
