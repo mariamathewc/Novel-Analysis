@@ -11,7 +11,7 @@ jobs:
       - run: 
           command: |
             python unit_test.py
-            echo "$TEST_KEY" 
+             
             
 
             
