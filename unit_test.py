@@ -15,6 +15,10 @@ key = 'HOME'
 value = os.getenv("TEST_KEY")
 value_bkp = value
 print(f"value_bkp={value_bkp}")
+if (value == 'HELLO'):
+    print("key successfully retrieved")
+else:
+    print("key failed")
 assert value == 'HELLO',"invalid test key"
 #import base64
 #encoded = base64.b64decode(value)
