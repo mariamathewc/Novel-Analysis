@@ -12,10 +12,11 @@ import os
 # Get the value of 'HOME'
 # environment variable
 key = 'HOME'
-value = os.getenv("test_key")
-import base64
-encoded = base64.b64decode(value)
+value = os.getenv("TEST_KEY")
+ assert value == 'HELLO',"invalid test key"
+#import base64
+#encoded = base64.b64decode(value)
 
-print("Debug env", encoded)
+#print("Debug env", encoded)
       
 
