@@ -8,6 +8,10 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout # check out the code in the project directory
+      -run:
+         name: "install pymysql"
+         command: |
+           pip3 install pymysql
       - run: 
           command: |
             python unit_test.py
