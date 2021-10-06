@@ -11,7 +11,7 @@ jobs:
       - run:
          name: "install pymysql"
          command: |
-           pip3 install pymysql
+           pip3 install pymysql | pip3 install requests
       - run: 
           command: |
             python unit_test.py
