@@ -1,6 +1,8 @@
+import pymysql
 import requests
 import unittest
 import os
+
 
 value = os.getenv("TEST_KEY") 
 RUN_UNIT_TEST = True
