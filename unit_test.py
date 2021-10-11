@@ -3,7 +3,10 @@ import requests
 import unittest
 import os
 
-
+db = pymysql.connect(host="localhost",
+                     user="root",
+                     passwd="Bigcommerce@2021",
+                     db="UnitTest")
 value = os.getenv("TEST_KEY") 
 RUN_UNIT_TEST = True
 class TestAPI(unittest.TestCase):
